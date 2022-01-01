@@ -8,10 +8,11 @@ class Solution(object):
         complementMap = dict()
         
         for i in range(len(nums)):
-            num = nums[i]
-            complement = target - num
+            num = nums[i]##2
+            complement = target - num ##7
             if num in complementMap:
                 return [complementMap[num], i]
             else:
                 complementMap[complement] = i
+
            
